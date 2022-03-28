@@ -69,30 +69,30 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
-<!--                <configuration>-->
-<!--                    <argLine>-Dfile.encoding=UTF-8</argLine>-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <suiteXmlFile>src/test/java/resourcse/test.xml</suiteXmlFile>-->
-<!--                    </suiteXmlFiles>-->
-<!--                    <systemPropertyVariables>-->
-<!--                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>-->
-<!--                    </systemPropertyVariables>-->
-<!--                </configuration>-->
                 <configuration>
-                    <properties>
-                        <property>
-<!--                            <name>usedefaultlisteners</name>-->
-<!--                            <value>false</value>-->
-                            <name>listener</name>
-                            <value>com.epam.reportportal.testng.ReportPortalTestNGListener</value>
-                            <systemPropertyVariables>
-                                <rp.endpoint>https://demo.reportportal.io</rp.endpoint>
-                                <rp.uuid>f0628974-522e-49b0-bb7f-b585a14d91f0</rp.uuid>
-                                <rp.launch>maskoiryna_TEST_EXAMPLE</rp.launch>
-                                <rp.project>maskoiryna_personal</rp.project>
-                            </systemPropertyVariables>
-                        </property>
-                    </properties>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/java/resourcse/test.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <rp.endpoint>https://demo.reportportal.io</rp.endpoint>
+                        <rp.uuid>f0628974-522e-49b0-bb7f-b585a14d91f0</rp.uuid>
+                        <rp.launch>maskoiryna_TEST_EXAMPLE</rp.launch>
+                        <rp.project>maskoiryna_personal</rp.project>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
+                    <systemProperties>
+                        <properties>
+                            <property>
+                                <name>usedefaultlisteners</name>
+                                <value>false</value>
+                            </property>
+                            <property>
+                                <name>listener</name>
+                                <value>com.epam.reportportal.testng.ReportPortalTestNGListener</value>
+                            </property>
+                        </properties>
+                    </systemProperties>
                 </configuration>
             </plugin>
             <plugin>
