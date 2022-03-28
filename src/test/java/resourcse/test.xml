@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Practice Suite" parallel="true" thread-count="2">
+    <test name="Tests">
+        <classes>
+            <class name="DeliveryInformationTest"/>
+            <class name="HomePageTest"/>
+            <class name="RubberDuckTest"/>
+            <class name="NegativeRubberDuckTest"/>
+            <class name="TermsConditionsTest"/>
+        </classes>
+    </test>
+</suite>
