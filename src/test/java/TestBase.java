@@ -24,7 +24,7 @@ public class TestBase {
         }
         Configuration.assertionMode = AssertionMode.STRICT;
         Configuration.baseUrl = "https://litecart.stqa.ru/en/";
-//        Configuration.browser = CHROME;
+        Configuration.browser = CHROME;
         Configuration.pageLoadTimeout = 15000;
         Configuration.timeout = 10;
         open(Configuration.baseUrl);
