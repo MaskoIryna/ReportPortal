@@ -1,5 +1,5 @@
 package pages;
-
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
@@ -7,8 +7,6 @@ import static com.codeborne.selenide.Selenide.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import static com.codeborne.selenide.Selenide.$;
-
-
 
 public class RubberDucksPage extends TestBase {
     public static By bottomRubberDucks = By.linkText("Rubber Ducks");
@@ -28,8 +26,10 @@ public class RubberDucksPage extends TestBase {
     }
 
     public static void findElementSubcategoryClick() {
-        actions().moveToElement($(bottomRubberDucks)).perform();
-        actions().moveToElement($(elementSubcategory)).click().perform();
+        //эти танцы с бубном из-за firefox
+        actions().moveToElement($(bottomRubberDucks)).build().perform();
+        actions().moveToElement($(elementSubcategory)).build().perform();
+        $(elementSubcategory).shouldBe(Condition.visible).click();
     }
 
     public static boolean clickPriceAndSortRubberDucksPage() {
@@ -59,6 +59,6 @@ public class RubberDucksPage extends TestBase {
 
     public static String getAccessibility(By locator) {
         findElementSubcategoryClick();
-        return $(locator).getAccessibleName();
+        return $(locator).toString();
     }
 }

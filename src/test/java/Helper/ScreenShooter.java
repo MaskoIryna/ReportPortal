@@ -18,7 +18,7 @@ public class ScreenShooter implements ITestListener {
         }
         Allure.addAttachment("Source","text",getPageSource(),"html");
 
-        //File screenshot = ((TakesScreenshot)WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.FILE);
+        File screenshot = ((TakesScreenshot)WebDriverRunner.getWebDriver()).getScreenshotAs(OutputType.FILE);
 
     }
     private static InputStream getScreenshotAsInputStream() throws FileNotFoundException{

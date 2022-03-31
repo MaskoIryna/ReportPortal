@@ -1,4 +1,3 @@
-
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
