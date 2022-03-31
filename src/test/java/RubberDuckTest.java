@@ -3,6 +3,7 @@ import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -29,7 +30,7 @@ public class RubberDuckTest extends TestBase{
     @Test
     public void findElementSubcategoryTest() {
         RubberDucksPage.findElementSubcategoryClick();
-        $(RubberDucksPage.titleElementSubcategory).shouldHave(text(RubberDucksPage.expectedSubcategory));
+        $(RubberDucksPage.titleElementSubcategory).should(exist).shouldHave(text(RubberDucksPage.expectedSubcategory));
         logger.info("INFO findElementSubcategoryTest");
         logger.info(String.format("expect %s actual %s",$(RubberDucksPage.titleElementSubcategory).getText(),
                 RubberDucksPage.expectedSubcategory));
