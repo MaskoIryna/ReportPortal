@@ -5,8 +5,6 @@ public enum Browser {
     FIREFOX("firefox"),
     EDGE ("edge");
 
-
-
     final String browserName;
 
     Browser(String browserName){
