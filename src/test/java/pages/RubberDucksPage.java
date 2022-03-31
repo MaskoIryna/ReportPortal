@@ -1,5 +1,4 @@
 package pages;
-
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
@@ -8,8 +7,6 @@ import static com.codeborne.selenide.Selenide.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import static com.codeborne.selenide.Selenide.$;
-
-
 
 public class RubberDucksPage extends TestBase {
     public static By bottomRubberDucks = By.linkText("Rubber Ducks");

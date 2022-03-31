@@ -1,4 +1,5 @@
 
+import Helper.ScreenShooter;
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -14,6 +15,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 @Listeners({ReportPortalTestNGListener.class})
+
 public class RubberDuckTest extends TestBase{
     @Epic(value ="VERIFICATION_TITLE")
     @Test

@@ -1,14 +1,17 @@
+import Helper.ScreenShooter;
 import com.codeborne.selenide.AssertionMode;
 import com.codeborne.selenide.Configuration;
 import enums.Browser;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+
 import static com.codeborne.selenide.Browsers.CHROME;
 import static com.codeborne.selenide.Configuration.browser;
 import static com.codeborne.selenide.Selenide.closeWindow;
 import static com.codeborne.selenide.Selenide.open;
-
+@Listeners({ ScreenShooter.class})
 public class TestBase {
         protected Logger logger = Logger.getLogger(TestBase.class);
 

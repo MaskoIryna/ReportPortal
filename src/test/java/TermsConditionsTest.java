@@ -1,3 +1,4 @@
+import Helper.ScreenShooter;
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import io.qameta.allure.Epic;
 import org.testng.annotations.Listeners;
@@ -7,6 +8,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 @Listeners({ReportPortalTestNGListener.class})
+
 public class TermsConditionsTest extends TestBase {
 
     @Epic(value ="VERIFICATION_TITLE")

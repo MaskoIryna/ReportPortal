@@ -1,3 +1,4 @@
+import Helper.ScreenShooter;
 import com.epam.reportportal.testng.ReportPortalTestNGListener;
 import io.qameta.allure.Epic;
 import org.testng.Assert;
