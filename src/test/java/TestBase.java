@@ -20,6 +20,8 @@ public class TestBase {
             break;
             case FIREFOX: Configuration.browser = "FIREFOX";
             break;
+            case EDGE: browser ="EDGE";
+            break;
             default: browser = CHROME;
         }
         Configuration.assertionMode = AssertionMode.STRICT;

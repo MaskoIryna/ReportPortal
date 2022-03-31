@@ -78,7 +78,7 @@
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <rp.endpoint>https://demo.reportportal.io</rp.endpoint>
-                        <rp.uuid>f0628974-522e-49b0-bb7f-b585a14d91f0</rp.uuid>
+                        <rp.uuid>c85854f9-747d-4c97-86a5-2d854bd9c593</rp.uuid>
                         <rp.launch>maskoiryna_TEST_EXAMPLE</rp.launch>
                         <rp.project>maskoiryna_personal</rp.project>
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>

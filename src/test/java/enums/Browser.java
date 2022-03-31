@@ -2,7 +2,8 @@ package enums;
 
 public enum Browser {
     CHROME("chrome"),
-    FIREFOX("firefox");
+    FIREFOX("firefox"),
+    EDGE ("edge");
 
 
 
